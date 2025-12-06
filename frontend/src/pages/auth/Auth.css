@@ -1,0 +1,57 @@
+.login-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+}
+
+.clinic-logo {
+  font-size: 3.5rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.login-card .form-control,
+.login-card .form-select {
+  border: 2px solid #e9ecef;
+  padding: 0.75rem 1rem;
+}
+
+.login-card .form-control:focus,
+.login-card .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.info-card {
+  transition: all 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 576px) {
+  .clinic-logo {
+    font-size: 2.5rem;
+  }
+
+  .login-card {
+    margin: 0 -15px;
+    border-radius: 0;
+  }
+}

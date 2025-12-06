@@ -1,0 +1,129 @@
+clinic-management-system/
+│
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   │   ├── database.js
+│   │   │   └── constants.js
+│   │   ├── controllers/
+│   │   │   ├── AuthController.js
+│   │   │   ├── PatientController.js
+│   │   │   ├── DoctorController.js
+│   │   │   ├── AppointmentController.js
+│   │   │   ├── PharmacyController.js
+│   │   │   ├── BillingController.js
+│   │   │   └── DashboardController.js
+│   │   ├── services/
+│   │   │   ├── AuthService.js
+│   │   │   ├── PatientService.js
+│   │   │   ├── DoctorService.js
+│   │   │   ├── AppointmentService.js
+│   │   │   ├── PharmacyService.js
+│   │   │   └── BillingService.js
+│   │   ├── repositories/
+│   │   │   ├── BaseRepository.js
+│   │   │   ├── PatientRepository.js
+│   │   │   ├── DoctorRepository.js
+│   │   │   ├── AppointmentRepository.js
+│   │   │   └── PharmacyRepository.js
+│   │   ├── middleware/
+│   │   │   ├── authMiddleware.js
+│   │   │   ├── errorHandler.js
+│   │   │   └── validateInput.js
+│   │   ├── routes/
+│   │   │   ├── authRoutes.js
+│   │   │   ├── patientRoutes.js
+│   │   │   ├── doctorRoutes.js
+│   │   │   ├── appointmentRoutes.js
+│   │   │   ├── pharmacyRoutes.js
+│   │   │   ├── billingRoutes.js
+│   │   │   └── dashboardRoutes.js
+│   │   └── server.js
+│   ├── database/
+│   │   ├── schema.sql
+│   │   ├── seedData.sql
+│   │   └── migrations/
+│   │       └── 001_initial_setup.sql
+│   ├── .env
+│   ├── .env.example
+│   ├── .gitignore
+│   ├── Dockerfile
+│   ├── package.json
+│   └── nodemon.json
+│
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   ├── favicon.ico
+│   │   └── manifest.json
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── common/
+│   │   │   │   ├── Header.jsx
+│   │   │   │   ├── Sidebar.jsx
+│   │   │   │   ├── LoadingSpinner.jsx
+│   │   │   │   ├── ProtectedRoute.jsx
+│   │   │   │   └── NotFound.jsx
+│   │   │   ├── Forms/
+│   │   │   │   ├── PatientForm.jsx
+│   │   │   │   ├── AppointmentForm.jsx
+│   │   │   │   └── PrescriptionForm.jsx
+│   │   │   └── Tables/
+│   │   │       ├── PatientTable.jsx
+│   │   │       ├── AppointmentTable.jsx
+│   │   │       └── PrescriptionTable.jsx
+│   │   ├── pages/
+│   │   │   ├── auth/
+│   │   │   │   ├── Login.jsx
+│   │   │   │   └── Register.jsx
+│   │   │   ├── dashboard/
+│   │   │   │   └── Dashboard.jsx
+│   │   │   ├── patients/
+│   │   │   │   ├── PatientList.jsx
+│   │   │   │   ├── PatientDetail.jsx
+│   │   │   │   └── PatientAdd.jsx
+│   │   │   ├── doctors/
+│   │   │   │   ├── DoctorList.jsx
+│   │   │   │   └── DoctorProfile.jsx
+│   │   │   ├── appointments/
+│   │   │   │   ├── AppointmentList.jsx
+│   │   │   │   ├── BookAppointment.jsx
+│   │   │   │   └── AppointmentSchedule.jsx
+│   │   │   ├── pharmacy/
+│   │   │   │   ├── MedicineList.jsx
+│   │   │   │   ├── PrescriptionList.jsx
+│   │   │   │   └── StockManagement.jsx
+│   │   │   └── billing/
+│   │   │       ├── BillingList.jsx
+│   │   │       ├── PaymentProcessing.jsx
+│   │   │       └── BillingReports.jsx
+│   │   ├── services/
+│   │   │   ├── api.js
+│   │   │   ├── authService.js
+│   │   │   └── localStorageService.js
+│   │   ├── styles/
+│   │   │   ├── index.css
+│   │   │   ├── App.css
+│   │   │   ├── variables.css
+│   │   │   ├── responsive.css
+│   │   │   └── components/
+│   │   │       ├── tables.css
+│   │   │       ├── forms.css
+│   │   │       └── modals.css
+│   │   ├── context/
+│   │   │   ├── AuthContext.jsx
+│   │   │   └── NotificationContext.jsx
+│   │   ├── App.jsx
+│   │   ├── index.jsx
+│   │   └── .env
+│   ├── .env.example
+│   ├── .gitignore
+│   ├── Dockerfile
+│   ├── package.json
+│   └── vite.config.js
+│
+├── docker-compose.yml
+├── docker-compose.dev.yml
+├── README.md
+├── SETUP_GUIDE.md
+└── .gitignore

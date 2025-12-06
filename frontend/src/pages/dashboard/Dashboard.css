@@ -1,0 +1,79 @@
+.dashboard-main {
+  margin-top: 60px;
+  margin-left: 250px;
+  min-height: calc(100vh - 60px);
+  background-color: #f8f9fa;
+}
+
+.stat-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  opacity: 0.2;
+}
+
+.stat-card h2 {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+  color: white;
+  border: none;
+  font-weight: 600;
+  border-radius: 12px 12px 0 0 !important;
+  padding: 1rem;
+}
+
+.list-group-item {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  border-bottom: 2px solid #dee2e6;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-main {
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-main {
+    margin-left: 0;
+    margin-top: 56px;
+  }
+
+  .stat-card h2 {
+    font-size: 1.5rem;
+  }
+}
